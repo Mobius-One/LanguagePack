@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AnySoftKeyboard - change_me Language Pack</string>
-    <string name="keyboard_name">change_me</string>
-    <string name="dictionary_name">change_me</string>
+    <string name="app_name">AnySoftKeyboard - Japanese Language Pack</string>
+    <string name="jis">JIS</string>
+    <string name="keitai">Keitai</string>
+    <string name="qwerty">Qwerty</string>
+	<string name="jis_katakana">Katakana JIS</string>
+	<string name="keitai_katakana">Katakana Keitai</string>
+    <string name="dictionary_name">mozc_dictionary</string>
+
+
+
+
+    
 </resources>
