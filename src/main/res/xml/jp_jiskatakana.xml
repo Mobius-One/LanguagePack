@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <!-- Key attributes:
+         "android:codes" : a comma separated unicode values of the keys. If you specify more than one code, then the other codes are accessible via multi-tap.
+         "android:popupCharacters" : characters to show on long-press popup keyboard
+         "android:keyLabel" : the text to show on the key. If this attribute is missing, the first code in "android:codes" will be used.
+         "android:horizontalGap" : gap to add to the left of this key.
+         "android:isModifier" : true/false (default is false) whether this key is a modifier key. Means it will be rendered with a differnt background (shift, delete are example of modifier key)
+         "android:isRepeatable" : true/false (default is false) whether this key repeats printing on long press (like the backspace). Setting this to true will disable the long-press (android:popupCharacters) functionality
+         "android:keyWidth" : specify the width of this key
+         -->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0px"
+    android:verticalGap="0px">
+    <Row android:keyWidth="8.3%p">
+        <Key android:codes="12492" android:keyEdgeFlags="left"/>
+        <Key android:codes="12501" android:popupCharacters="&#12502;&#12503;"/>
+        <Key android:codes="12450" android:popupCharacters="&#12449;"/>
+        <Key android:codes="12454" android:popupCharacters="&#12453;&#12532;"/>
+        <Key android:codes="12456" android:popupCharacters="&#12455;"/>
+        <Key android:codes="12458" android:popupCharacters="&#12457;"/>
+        <Key android:codes="12516" android:popupCharacters="&#12515;"/>
+        <Key android:codes="12518" android:popupCharacters="&#12517;"/>
+        <Key android:codes="12520" android:popupCharacters="&#12519;"/>
+        <Key android:codes="12527" android:popupCharacters="&#12526;"/>
+        <Key android:codes="12507" android:popupCharacters="&#12509;&#12508;"/>
+        <Key android:codes="12504" android:popupCharacters="&#12506;&#12505;"/>
+    </Row>
+    <Row android:keyWidth="10%p">
+        <Key android:codes="12479"  android:popupCharacters="&#12480;"/>
+        <Key android:codes="12486" android:popupCharacters="&#12487;"/>
+        <Key android:codes="12452" android:popupCharacters="&#12451;"/>
+        <Key android:codes="12473" android:popupCharacters="&#12474;"/>
+        <Key android:codes="12459" android:popupCharacters="&#12460;"/>
+        <Key android:codes="12531"/>
+        <Key android:codes="12490"/>
+        <Key android:codes="12491"/>
+        <Key android:codes="12521"/>
+        <Key android:codes="12475" android:popupCharacters="&#12476;" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row android:keyWidth="8.3%p"> 
+        <Key android:codes="12481" android:popupCharacters="&#12482;"/>
+        <Key android:codes="12488" android:popupCharacters="&#12489;"/>
+        <Key android:codes="12471" android:popupCharacters="&#12472;"/>
+        <Key android:codes="12495" android:popupCharacters="&#12496;&#12497;"/>	
+        <Key android:codes="12461" android:popupCharacters="&#12462;"/>
+        <Key android:codes="12463" android:popupCharacters="&#12464;"/>
+        <Key android:codes="12510" />
+        <Key android:codes="12494" />
+        <Key android:codes="12522" />
+        <Key android:codes="12524" />
+        <Key android:codes="12465" android:popupCharacters="&#12466;"/>
+        <Key android:codes="12512"/>
+    </Row>
+    <Row android:keyWidth="7.9%p">
+        <Key android:codes="12484" android:popupCharacters="&#12485;&#12483;"/>
+        <Key android:codes="12469" android:popupCharacters="&#12470;"/>
+        <Key android:codes="12477" android:popupCharacters="&#12478;"/>
+        <Key android:codes="12498" android:popupCharacters="&#12499;&#12500;"/>
+        <Key android:codes="12467" android:popupCharacters="&#12468;"/>
+        <Key android:codes="12511" />
+        <Key android:codes="12514" />
+        <Key android:codes="12493"/>
+        <Key android:codes="12523" />
+        <Key android:codes="12513" />
+        <Key android:codes="12525"/>
+        <Key android:keyWidth="13%p" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    </Row>
+    
+    <!-- Generic bottom row -->
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="&#12304;" android:keyWidth="15%p" android:keyLabel="&#12304;&#12305;" android:popupCharacters="&#12305;&#12302;&#12303;&#65378;&#65379;&#12308;&#12309;&#65117;&#65118;&#12296;&#12297;&#9001;&#9002;&#12298;&#12299;&#12310;&#12311;&#12312;&#12313;" android:keyEdgeFlags="left"/>
+        <Key android:codes="&#65380;" android:keyWidth="15%p" android:popupCharacters="&#12316;&#12540;&#65392;&#8230;&#12539;" />
+        <Key android:codes="32" android:keyWidth="35%p" />
+        <Key android:codes="&#65377;" android:keyWidth="15%p" android:popupCharacters=".,:;-_"/>
+        <Key android:codes="10" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

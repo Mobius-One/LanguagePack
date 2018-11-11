@@ -3,10 +3,43 @@
     <!-- Dictionary attributes:
      "nameResId" : the name of the keyboard. Should be short. Reference to a string in values.xml 
      "defaultDictionaryLocale" : the ID of the keyboard's (ISO) locale, e.g., "en", "iw", "ar", "ru", etc. The dictionary should declare the same locale. 
-     "id" : UUID for this keyboard. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
      "iconResId" : a reference to a drawable which can be used to show a flag in the notification bar.
-     "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
+      "layoutResId" : a reference to a keyboard layout XML. See res/xml/qwerty.xml
+     "id" : UUID for this keyboard. Obtain from here: http://www.famkruithof.net/uuid/uuidgen
      -->
-	<Keyboard nameResId="@string/keyboard_name" iconResId="change_me" layoutResId="@xml/qwerty" 
-	    id="change_me" defaultDictionaryLocale="change_me" description="change_me" index="1"/>
-</Keyboards>
+	<Keyboard nameResId="@string/jis"
+        iconResId="change_me" 
+        layoutResId="@xml/jp_jis" 
+        id="2ec38710-c666-11e8-b568-080" 
+        defaultDictionaryLocale="jp" 
+        description="Full Hiragana'qwerty' keyboard based on the Japanese Industrial Standards." 
+        index="1"/>
+        <Keyboard nameResId="@string/keitai" 
+        iconResId="change_me" 
+        layoutResId="@xml/jp_keitai"
+	    id="3cfbaa10-c666-11e8-b568-0800200c9a66" 
+        defaultDictionaryLocale="jp" 
+        description="12-key Hiragana keyboard based on classic multitap keitai." 
+        index="2"/>
+        <Keyboard nameResId="@string/qwerty"
+        iconResId="change_me"
+        layoutResId="@xml/qwerty"
+        id="2ec38710-c666-11e8-b568-080020"
+        defaultDictionaryLocale="jp"
+        description="Test Bed Keyboard."
+        index="3"/>
+        <Keyboard nameResId="@string/jis_katakana"
+        iconResId="change_me"
+        id="5a8ca270-dfb9-11e8-b568-08002c9a66"
+        layoutResId="@xml/jp_jiskatakana"
+        defaultDictionaryLocale="jp"
+        description="Full Katakana 'qwerty' keyboard based on the Japanese Industrial Standards."
+        index="4"/>
+        <Keyboard nameResId="@string/keitai_katakana"
+        iconResId="change_me"
+        layoutResId="@xml/jp_keitaikatakana"
+        id="2ec3710-c666-11e8-b568-020"
+        defaultDictionaryLocale="jp"
+        description="12-key Katakana keyboard based on classic multitap keitai."
+        index="5"/>
+    </Keyboards>

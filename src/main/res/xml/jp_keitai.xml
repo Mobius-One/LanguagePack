@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android" android:keyHeight="30%p" android:keyWidth="33%p" android:horizontalGap="0px"
+    android:verticalGap="0px">
+
+   <!-- <Row android:rowEdgeFlags="top" android:keyWidth="20%p">
+        <Key android:codes="-2" />
+        <Key android:codes="-20" android:keyEdgeFlags="left"/>
+        <Key android:codes="-21" android:isRepeatable="true"/>
+        <Key android:codes="-97" android:keyLabel="JIS" android:keyEdgeFlags="right"/>        
+    </Row> -->
+    <Row>
+        <Key android:codes="あ,い,う,え,お" android:popupCharacters="ぁぃぅぇぉ" android:keyEdgeFlags="left"/>
+        <Key android:codes="か,き,く,け,こ" android:popupCharacters="がぎぐげご" />
+        <Key android:codes="さ,し,す,せ,そ" android:popupCharacters="ざじずぜぞ" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+            <Key android:codes="た,ち,つ,て,と" android:popupCharacters="だぢづっでど" android:keyEdgeFlags="left"/>
+        <Key android:codes="な,に,ぬ,ね,の" />
+        <Key android:codes="は,ひ,ふ,へ,ほ" android:popupCharacters="ぱぴぷぺぽばびぶべぼ" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="ま,み,む,め,も" android:popupCharacters="" android:keyEdgeFlags="left"/>
+        <Key android:codes="や,ゆ,よ,ゃ,ゅ,ょ" android:popupCharacters="" />
+        <Key android:codes="ら,り,る,れ,ろ" android:popupCharacters="" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row android:rowEdgeFlags="bottom" android:keyWidth="25%p">
+        <Key android:codes="ん,わ,ゎ,ゐ,ゑ,を" />
+        <Key android:codes="32" android:isRepeatable="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="-5" android:isRepeatable="true"/>
+        <Key android:codes="10" android:keyEdgeFlags="right" android:isRepeatable="true"/>        
+    </Row>
+</Keyboard>
